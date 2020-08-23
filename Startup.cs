@@ -12,7 +12,6 @@ using Microsoft.Extensions.Logging;
 using Microsoft.EntityFrameworkCore;
 using MyProject.Models;
 using MyProject.Repositories;
-using Microsoft.AspNetCore.Cors;
 
 namespace MyProject
 {
@@ -32,7 +31,7 @@ namespace MyProject
                opt.UseSqlite("Filename=./Users.db"));
             services.AddControllers();
             services.AddScoped<IDataRep,UserDataRep>();
-            services.AddCors();
+            services.AddCors();  
         }
         // This method gets called by the runtime. Use this method to configure the HTTP request pipeline.
         public void Configure(IApplicationBuilder app, IWebHostEnvironment env)
@@ -43,14 +42,14 @@ namespace MyProject
             }
 
             app.UseRouting();
-
-            app.UseAuthorization();
+            
+            app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader()); 
 
             app.UseEndpoints(endpoints =>
             {
                 endpoints.MapControllers();
             });
-            app.UseCors(options => options.AllowAnyOrigin().AllowAnyMethod().AllowAnyHeader());
+             
         }
     }
 }

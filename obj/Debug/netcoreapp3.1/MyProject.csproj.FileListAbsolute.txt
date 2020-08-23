@@ -29,7 +29,6 @@
 /home/harish/MyProject/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.dll
 /home/harish/MyProject/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Abstractions.dll
 /home/harish/MyProject/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Design.dll
-/home/harish/MyProject/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.InMemory.dll
 /home/harish/MyProject/bin/Debug/netcoreapp3.1/Microsoft.EntityFrameworkCore.Relational.dll
 /home/harish/MyProject/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Abstractions.dll
 /home/harish/MyProject/bin/Debug/netcoreapp3.1/Microsoft.Extensions.Caching.Memory.dll
